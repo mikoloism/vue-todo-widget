@@ -1,11 +1,36 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <b-container id="app">
+    <b-row>
+      <b-col cols="12" class="mb-3">
+        <nav class="m-3">
+          <b-nav tabs fill>
+            <router-link to="/">
+              <b-nav-item>
+                <b-icon-house />
+              </b-nav-item>
+            </router-link>
+            <router-link to="/about">
+              <b-nav-item>
+                <b-icon-archive />
+              </b-nav-item>
+            </router-link>
+            <router-link to="/todo">
+              <b-nav-item>
+                <b-icon-arrow-down-left />
+              </b-nav-item>
+            </router-link>
+          </b-nav>
+        </nav>
+      </b-col>
+      <b-col>
+        <main>
+          <article>
+            <router-view />
+          </article>
+        </main>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <style lang="scss">

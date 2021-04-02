@@ -1,0 +1,44 @@
+<template #WBody>
+  <b-col tag="div" cols="12" class="mb-2">
+    <b-skeleton-wrapper :loading="loading">
+      <template #loading>
+        <b-card class="mt-2">
+          <b-skeleton animation="fade" width="100%"></b-skeleton>
+          <b-skeleton width="100%"></b-skeleton>
+          <b-skeleton width="100%"></b-skeleton>
+          <b-skeleton width="50%"></b-skeleton>
+        </b-card>
+      </template>
+
+      <ul class="mt-2" v-for="item in this.list" :key="item.id">
+        <li>
+          {{ item.title }}
+        </li>
+      </ul>
+    </b-skeleton-wrapper>
+  </b-col>
+</template>
+<script>
+import Store from '@/store'
+export default {
+  name: 'WBodySkelet',
+  data() {
+    return { Store, list: [], loading: false }
+  },
+  watch: {
+    loading(cur, pre) {
+      console.log({ cur, pre })
+      this.list = this.Store.state.todoItems
+      return true
+    },
+  },
+  mounted() {
+    this.skelet()
+  },
+  methods: {
+    skelet() {
+      this.list = this.Store.commit('todoGet')
+    },
+  },
+}
+</script>

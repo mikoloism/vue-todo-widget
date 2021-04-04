@@ -1,7 +1,7 @@
 <template>
   <label class="wg-todo__item pl-3" :for="`todo-check-${index}`">
     <wg-todo-item-checkbox
-      :checked="checked"
+      :checked="done"
       @checking="this.handleChecking"
       :index="index"
     />
@@ -22,6 +22,7 @@ export default {
     header: String,
     description: String,
     index: [String, Number],
+    done: Boolean,
   },
   methods: {
     handleChecking(e) {

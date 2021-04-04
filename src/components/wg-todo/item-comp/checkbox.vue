@@ -1,4 +1,4 @@
-<template #WgTodoItemCheckbox>
+<template>
   <div class="wg-todo__checkbox-wrapper">
     <input
       type="checkbox"

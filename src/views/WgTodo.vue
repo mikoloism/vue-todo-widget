@@ -1,4 +1,4 @@
-<template #WgTodo>
+<template>
   <b-row class="wg-todo--width" align-h="center" align-v="center">
     <b-col cols="11">
       <b-row
@@ -6,9 +6,9 @@
         align-h="center"
         class="rounded overflow-hidden border border-dark"
       >
-        <wg-todo-header :currentRoute="currentRoute" @toNext="setNextRoute" />
+        <wg-todo-header :view="view" @toggle="this.forwardView" />
         <!--  -->
-        <wg-todo-body />
+        <wg-todo-body :view="view" />
         <!--  -->
         <wg-todo-footer />
       </b-row>
@@ -23,12 +23,28 @@ import WgTodoFooter from '@/layouts/wg-todo/footer'
 export default {
   name: 'WgTodo',
   data() {
-    return { currentRoute: '/todo' }
+    return {
+      currentView: 'list', // item, form-create,form-edit,
+      view: {
+        reader: this.getView,
+        to: this.forwardView,
+        current: this.currentView,
+      },
+    }
   },
   methods: {
-    setNextRoute() {
-      this.currentRoute =
-        this.$router.currentRoute.path === '/todo' ? '/todo/new' : '/todo'
+    toggleView() {},
+    getView() {
+      return this.currentView
+    },
+    forwardView(to = 'list') {
+      console.log(
+        `[forwardView] (/views/wg-todo.vue) changed from <${this.currentView}> to <${to}>`
+      )
+      this.currentView = to
+    },
+    nextView() {
+      return this.currentView === 'list' ? 'form' : 'list'
     },
   },
   components: { WgTodoHeader, WgTodoBody, WgTodoFooter },

@@ -1,4 +1,4 @@
-<template #WgTodoItemOptions>
+<template>
   <b-col cols="12">
     <b-btn class="mr-1 ml-1" variant="danger">
       <b-icon-trash />

@@ -44,7 +44,6 @@ export default new Vuex.Store({
           id: _.uniqueId('todo-item--'),
         })
           .then(({ res }) => {
-            console.log(res)
             commit('TODO_INSERT', res)
             return true
           })
@@ -123,7 +122,6 @@ export default new Vuex.Store({
       const selectedItem = _.filter(TodoItems, (item) => item.id === index)
       if (selectedItem.length > 0)
         selectedItem[0].isDone = !selectedItem[0].isDone
-      console.log(selectedItem)
     },
     TODO_CHANGE: ({ TodoItems }, prevItem, nextItem) => {
       const value = { ...prevItem, ...nextItem }

@@ -1,4 +1,4 @@
-<template #WgTodoFooter>
+<template>
   <b-col
     align-self="center"
     tag="div"

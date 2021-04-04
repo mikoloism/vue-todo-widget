@@ -1,18 +1,21 @@
-<template #WgTodoItem>
-  <li class="wg-todo__item-box flex align-items-start list-group-item-action">
+<template>
+  <li
+    :class="`wg-todo__item-box flex align-items-start list-group-item-action ${
+      checked ? 'disabled' : ''
+    }`"
+  >
     <wg-todo-item-wrapper
-      v-if="1 + 1 != 0"
       :header="header"
       :description="description"
       :checked="checked"
       :index="index"
     />
-    <wg-todo-item-options v-else />
+    <!-- <wg-todo-item-options v-else /> -->
   </li>
 </template>
 <script>
-import WgTodoItemWrapper from './item/wrapper'
-import WgTodoItemOptions from './item/options'
+import WgTodoItemWrapper from './item-comp/wrapper.vue'
+// import WgTodoItemOptions from './item/options'
 export default {
   name: 'WgTodoItem',
   props: {
@@ -21,16 +24,21 @@ export default {
     description: String,
     checked: { type: Boolean, default: false },
   },
-  components: { WgTodoItemWrapper, WgTodoItemOptions },
+  components: { WgTodoItemWrapper }, // WgTodoItemOptions
 }
 </script>
 
 <style lang="scss">
 .wg-todo {
   &__item-box {
+    order: 1;
     list-style: none;
     padding: 0.6rem 0.1rem 0;
     border-radius: 1rem;
+    &[done='true'] {
+      opacity: 0.3;
+      order: 9;
+    }
   }
   &__item {
     display: flex;

@@ -1,4 +1,4 @@
-<template #WHeader>
+<template>
   <b-col tag="div" cols="12" class="mb-2">
     <b-row
       align-v="center"
@@ -8,42 +8,40 @@
     >
       <b-col cols="9" class="m-0 mt-1 p-1 h2" tag="h2">TO DO</b-col>
       <b-col cols="3">
-        <router-link pill class="m-2 p-2" :to="currentRoute">
-          <b-btn
-            as="div"
-            @click="this.trigger"
-            pill
-            :class="`p-0 wg-todo__btn-add ${router(
-              '',
-              'wg-todo__btn-add--active'
-            )}`"
-            :variant="router('primary', 'danger')"
-          >
-            <b-icon-plus v-if="currentRoute === '/todo'" variant="light" />
-            <b-icon-x v-else variant="light" />
-          </b-btn>
-        </router-link>
+        <b-btn
+          pill
+          @click="this.trigger"
+          :class="`m-2 p-2 p-0 wg-todo__btn-add ${this.toggler(
+            'wg-todo__btn-add--active',
+            ''
+          )}`"
+          :variant="this.toggler('primary', 'danger')"
+        >
+          <b-icon :icon="this.toggler('plus', 'x')" variant="light" />
+        </b-btn>
       </b-col>
     </b-row>
   </b-col>
 </template>
+
 <script>
 export default {
   name: 'WHeader',
-  props: { currentRoute: String },
+  props: ['view'],
   data() {
     return {}
   },
   methods: {
-    router(next, prev) {
-      return this.currentRoute === '/todo' ? next : prev
+    toggler(ifTrue = true, ifFalse = false, forWhat = 'list') {
+      return this.view.reader() === forWhat ? ifTrue : ifFalse
     },
     trigger() {
-      this.$emit('toNext')
+      this.$emit('toggle', this.view.reader() === 'list' ? 'form' : 'list')
     },
   },
 }
 </script>
+
 <style lang="scss">
 .wg-todo {
   &__btn-add {

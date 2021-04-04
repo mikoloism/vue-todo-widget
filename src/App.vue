@@ -3,22 +3,22 @@
     <b-row>
       <b-col cols="12" class="mb-3">
         <nav class="m-3">
-          <b-nav tabs fill>
-            <router-link to="/">
-              <b-nav-item>
+          <b-nav fill>
+            <b-nav-item>
+              <router-link to="/">
                 <b-icon-house />
-              </b-nav-item>
-            </router-link>
-            <router-link to="/about">
-              <b-nav-item>
+              </router-link>
+            </b-nav-item>
+            <b-nav-item>
+              <router-link to="/about">
                 <b-icon-archive />
-              </b-nav-item>
-            </router-link>
-            <router-link to="/todo">
-              <b-nav-item>
+              </router-link>
+            </b-nav-item>
+            <b-nav-item>
+              <router-link to="/todo">
                 <b-icon-arrow-down-left />
-              </b-nav-item>
-            </router-link>
+              </router-link>
+            </b-nav-item>
           </b-nav>
         </nav>
       </b-col>
@@ -32,6 +32,12 @@
     </b-row>
   </b-container>
 </template>
+
+<script>
+import '@/styles/main.scss'
+
+export default {}
+</script>
 
 <style lang="scss">
 #app {

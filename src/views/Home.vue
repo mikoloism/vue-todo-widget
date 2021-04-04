@@ -1,13 +1,14 @@
 <template>
   <article>
-    <sction>
-      <b-card>
-        <b-card-header header-tag="h2"> hi, try your first todo </b-card-header>
-        <b-card-body>
-          <p>pleae, first read guid then write</p>
-        </b-card-body>
-      </b-card>
-    </sction>
+    <section>
+      <p>
+        <b-btn variant="outline-primary">
+          <router-link to="/todo">
+            <b-icon-chevron-bar-right />
+          </router-link>
+        </b-btn>
+      </p>
+    </section>
   </article>
 </template>
 

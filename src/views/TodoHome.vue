@@ -1,14 +1,14 @@
 <template>
-  <b-row id="widget__todo" align-h="center" align-v="center">
-    <b-col cols="10">
+  <b-row class="wg-todo--width" align-h="center" align-v="center">
+    <b-col cols="11">
       <b-row
         tag="section"
         align-h="center"
         class="rounded overflow-hidden border border-dark"
       >
-        <w-header />
+        <w-header :currentRoute="currentRoute" @toNext="setNextRoute" />
         <!--  -->
-        <w-body id="widget__todo__body" class="rounded overflow-auto" />
+        <w-body />
         <!--  -->
         <w-footer />
       </b-row>
@@ -23,21 +23,27 @@ import WFooter from '@/layouts/widget/footer'
 export default {
   name: 'WidgetTodo',
   data() {
-    return { items: [] }
+    return { currentRoute: '/todo' }
   },
-  methods: {},
+  methods: {
+    setNextRoute() {
+      this.currentRoute =
+        this.$router.currentRoute.path === '/todo' ? '/todo/new' : '/todo'
+    },
+  },
   components: { WHeader, WBody, WFooter },
-  mounted() {},
 }
 </script>
 
 <style lang="scss">
 $fix-size: 400px;
-#widget__todo {
-  &__body {
+.wg-todo {
+  &--height {
     max-height: $fix-size;
     min-height: $fix-size;
   }
-  max-width: $fix-size;
+  &--width {
+    max-width: $fix-size;
+  }
 }
 </style>

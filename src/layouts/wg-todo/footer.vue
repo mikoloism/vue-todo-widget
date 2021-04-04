@@ -1,4 +1,4 @@
-<template #WFooter>
+<template #WgTodoFooter>
   <b-col
     align-self="center"
     tag="div"
@@ -26,6 +26,6 @@
 </template>
 <script>
 export default {
-  name: 'WFooter',
+  name: 'WgTodoFooter',
 }
 </script>

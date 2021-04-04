@@ -1,4 +1,4 @@
-<template #WBody>
+<template #WgTodoBody>
   <b-col
     tag="div"
     cols="12"
@@ -9,6 +9,6 @@
 </template>
 <script>
 export default {
-  name: 'WBody',
+  name: 'WgTodoBody',
 }
 </script>

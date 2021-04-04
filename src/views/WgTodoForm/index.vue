@@ -1,4 +1,4 @@
-<template>
+<template #WgTodoForm>
   <b-row
     v-if="state === 'read'"
     class="m-0 text-justify"
@@ -68,7 +68,7 @@
 <script>
 import useAction from '@/plugins/useAction'
 export default {
-  name: 'TFNew',
+  name: 'WgTodoForm',
   data() {
     return {
       canRedirect: false,

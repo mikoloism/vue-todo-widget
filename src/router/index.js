@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import TodoHome from '../views/TodoHome.vue'
-import TodoFormNew from '../views/Forms/TodoNew.vue'
-import TodoList from '../layouts/todo-item-group.vue'
+import WgTodo from '@/views/WgTodo.vue'
+import WgTForm from '@/views/WgTodoForm/index.vue'
+import WgTListView from '@/components/wg-todo/list.vue'
 import About from '../views/About.vue'
 
 Vue.use(VueRouter)
@@ -16,23 +16,23 @@ const routes = [
   },
   {
     path: '/todo',
-    component: TodoHome,
+    component: WgTodo,
     children: [
-      { path: '', name: 'TodoList', component: TodoList },
+      { path: '', name: 'WgTListView', component: WgTListView },
       {
         path: '/todo/new',
-        name: 'TodoFormNew',
-        component: TodoFormNew,
+        name: 'WgTFormCreate',
+        component: WgTForm,
       },
       {
         path: '/todo/update/:id',
-        name: 'WTFUpdate',
-        component: TodoFormNew,
+        name: 'WgTFormUpdate',
+        component: WgTForm,
       },
       {
         path: '/todo/read/:id',
-        name: 'WTFRead',
-        component: TodoFormNew,
+        name: 'WgTFormRead',
+        component: WgTForm,
       },
     ],
   },

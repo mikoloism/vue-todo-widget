@@ -1,22 +1,32 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	font-family: $FONT_VAZIR_REGULAR;
+  font-family: $FONT_VAZIR_REGULAR;
 }
 
 input[type='button'],
 input[type='reset'],
 input[type='submit'],
 button {
-	&,
-	&:hover,
-	&:active,
-	&:focus {
-		border: 0;
-		outline: none;
-		box-shadow: none;
-	}
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 90px;
 }

@@ -1,42 +1,19 @@
 <template>
   <b-container id="app">
-    <b-row>
-      <b-col cols="12" class="mb-3">
-        <nav class="m-3">
-          <b-nav fill>
-            <b-nav-item>
-              <router-link to="/">
-                <b-icon-house />
-              </router-link>
-            </b-nav-item>
-            <b-nav-item>
-              <router-link to="/about">
-                <b-icon-archive />
-              </router-link>
-            </b-nav-item>
-            <b-nav-item>
-              <router-link to="/todo">
-                <b-icon-arrow-down-left />
-              </router-link>
-            </b-nav-item>
-          </b-nav>
-        </nav>
-      </b-col>
-      <b-col>
-        <main>
-          <article>
-            <router-view />
-          </article>
-        </main>
-      </b-col>
-    </b-row>
+    <main>
+      <article>
+        <wg-todo />
+      </article>
+    </main>
   </b-container>
 </template>
 
 <script>
+import WgTodo from '@/views/WgTodo'
 import '@/styles/main.scss'
-
-export default {}
+export default {
+  components: { 'wg-todo': WgTodo },
+}
 </script>
 
 <style lang="scss">

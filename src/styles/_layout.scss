@@ -20,13 +20,16 @@ button {
     box-shadow: none;
   }
 }
-
-article {
+main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding-top: 90px;
+  margin-top: 30px;
+}
+
+article {
+  padding: 35px;
 }

@@ -5,7 +5,7 @@
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/vuex)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/bootstrap)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/bootstrap-vue)
-![GitHub](https://img.shields.io/github/license/miko-github/todo-with-vue)
+[![GitHub](https://img.shields.io/github/license/miko-github/todo-with-vue)](./LICENSE)
 
 ![Lines of code](https://img.shields.io/tokei/lines/github/miko-github/todo-with-vue)
 ![GitHub repo size](https://img.shields.io/github/repo-size/miko-github/todo-with-vue)

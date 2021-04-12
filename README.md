@@ -1,5 +1,7 @@
 # todo-widget
 
+[![Made with Vue](https://img.shields.io/badge/Vue-2-blue?logo=vue.js&logoColor=white)](https://www.npmjs.com/package/vue)
+
 the minimal todo app for using as widget
 
 ## Menu

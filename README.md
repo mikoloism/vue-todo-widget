@@ -5,11 +5,12 @@
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/bootstrap)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/bootstrap-vue)
 
+[![Made with Vue](https://img.shields.io/badge/Vue-2-blue?logo=vue.js&logoColor=white)](https://www.npmjs.com/package/vue)
+![GitHub](https://img.shields.io/github/license/miko-github/todo-with-vue)
+
 ![Lines of code](https://img.shields.io/tokei/lines/github/miko-github/todo-with-vue)
 ![GitHub repo size](https://img.shields.io/github/repo-size/miko-github/todo-with-vue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/miko-github/todo-with-vue)
-[![Made with Vue](https://img.shields.io/badge/Vue-2-blue?logo=vue.js&logoColor=white)](https://www.npmjs.com/package/vue)
-![GitHub](https://img.shields.io/github/license/miko-github/todo-with-vue)
 ![GitHub all releases](https://img.shields.io/github/downloads/miko-github/todo-with-vue/total)
 
 the minimal todo app for using as widget

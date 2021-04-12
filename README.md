@@ -1,4 +1,10 @@
 # todo-widget
+
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/vue)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/vuex)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/bootstrap)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/todo-with-vue/bootstrap-vue)
+
 ![Lines of code](https://img.shields.io/tokei/lines/github/miko-github/todo-with-vue)
 ![GitHub repo size](https://img.shields.io/github/repo-size/miko-github/todo-with-vue)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/miko-github/todo-with-vue)

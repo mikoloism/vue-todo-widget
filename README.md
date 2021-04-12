@@ -1,5 +1,24 @@
 # todo-widget
 
+the minimal todo app for using as widget
+
+## Menu
+
+- [Project Setup](#project-setup)
+- [Screenshots](#screenshots)
+
+## Project setup
+
+- installing dependencies `$ npm install`
+- Compiles and hot-reloads for development `$ npm run serve`
+- Compiles and minifies for production `$ npm run build`
+- Lints and fixes files `$ npm run lint`
+
+> Customize configuration
+> See [Configuration Reference](https://cli.vuejs.org/config/).
+
+[goto top](#menu)
+
 ## Screenshots
 
 ![empty-viwe](./src/assets/screen-shots/empty-view.png)
@@ -10,30 +29,8 @@
 >
 > may change to `indexedDB`
 
-## Project setup
+[goto top](#menu)
 
-```
-npm install
-```
+## License
 
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+this project is Under MIT License

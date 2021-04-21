@@ -29,7 +29,7 @@ the minimal todo app for using as widget
 > Customize configuration
 > See [Configuration Reference](https://cli.vuejs.org/config/).
 
-[goto top](#menu)
+[:arrow_up: back to top](#menu)
 
 ## Screenshots
 
@@ -41,8 +41,8 @@ the minimal todo app for using as widget
 >
 > may change to `indexedDB`
 
-[goto top](#menu)
+[:arrow_up: back to top](#menu)
 
 ## License
 
-this project is Under MIT License
+Under [MIT](./LICENSE) License

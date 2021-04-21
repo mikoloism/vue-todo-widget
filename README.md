@@ -14,7 +14,7 @@
 
 the minimal todo app for using as widget
 
-## Menu
+## Index
 
 - [Project Setup](#project-setup)
 - [Screenshots](#screenshots)
@@ -29,18 +29,19 @@ the minimal todo app for using as widget
 > Customize configuration
 > See [Configuration Reference](https://cli.vuejs.org/config/).
 
-[:arrow_up: back to top](#menu)
+[:arrow_up: back to top](#index)
 
 ## Screenshots
-[<img src="./src/assets/screenshots/empty-view.png" alt="empty-view" width="300" height="320" />](./src/assets/screenshots/empty-view.png)
-[<img src="./src/assets/screenshots/input-view.png" alt="input-view" width="300" height="320" />](./src/assets/screenshots/input-view.png)
-[<img src="./src/assets/screenshots/list-view.png" alt="list-view" width="300" height="320" />](./src/assets/screenshots/list-view.png)
+
+[<img src="./src/assets/screenshots/empty-view.png" alt="empty-view" width="260" height="340" />](./src/assets/screenshots/empty-view.png)
+[<img src="./src/assets/screenshots/input-view.png" alt="input-view" width="260" height="340" />](./src/assets/screenshots/input-view.png)
+[<img src="./src/assets/screenshots/list-view.png" alt="list-view" width="260" height="340" />](./src/assets/screenshots/list-view.png)
 
 > this todo use `localStorage` for saving data
 >
 > may change to `indexedDB`
 
-[:arrow_up: back to top](#menu)
+[:arrow_up: back to top](#index)
 
 ## License
 
